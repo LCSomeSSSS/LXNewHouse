@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4529F3C1A2101A41A262E0F8 /* libPods-LXNewHouse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2F2CB8241A272A3733CE05 /* libPods-LXNewHouse.a */; };
 		B74F7056255ADD9F007DBA35 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B74F7055255ADD9F007DBA35 /* AppDelegate.m */; };
 		B74F7059255ADD9F007DBA35 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B74F7058255ADD9F007DBA35 /* SceneDelegate.m */; };
 		B74F705C255ADD9F007DBA35 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B74F705B255ADD9F007DBA35 /* ViewController.m */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE43E3649100B0362024DCE6 /* Pods-LXNewHouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXNewHouse.debug.xcconfig"; path = "Target Support Files/Pods-LXNewHouse/Pods-LXNewHouse.debug.xcconfig"; sourceTree = "<group>"; };
 		B74F7051255ADD9F007DBA35 /* LXNewHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXNewHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B74F7054255ADD9F007DBA35 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B74F7055255ADD9F007DBA35 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +31,8 @@
 		B74F7063255ADDA3007DBA35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B74F7065255ADDA3007DBA35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B74F7066255ADDA3007DBA35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF2F2CB8241A272A3733CE05 /* libPods-LXNewHouse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LXNewHouse.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6BE73B67CB5F92D8BDCC13 /* Pods-LXNewHouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXNewHouse.release.xcconfig"; path = "Target Support Files/Pods-LXNewHouse/Pods-LXNewHouse.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4529F3C1A2101A41A262E0F8 /* libPods-LXNewHouse.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24B8084C39B034FBA72354AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF2F2CB8241A272A3733CE05 /* libPods-LXNewHouse.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B74F7048255ADD9F007DBA35 = {
 			isa = PBXGroup;
 			children = (
 				B74F7053255ADD9F007DBA35 /* LXNewHouse */,
 				B74F7052255ADD9F007DBA35 /* Products */,
+				BCDD834ED68271A917F57DF5 /* Pods */,
+				24B8084C39B034FBA72354AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +91,16 @@
 			path = LXNewHouse;
 			sourceTree = "<group>";
 		};
+		BCDD834ED68271A917F57DF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE43E3649100B0362024DCE6 /* Pods-LXNewHouse.debug.xcconfig */,
+				EF6BE73B67CB5F92D8BDCC13 /* Pods-LXNewHouse.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +108,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B74F706A255ADDA3007DBA35 /* Build configuration list for PBXNativeTarget "LXNewHouse" */;
 			buildPhases = (
+				A96AADBF0399C29157BB9049 /* [CP] Check Pods Manifest.lock */,
 				B74F704D255ADD9F007DBA35 /* Sources */,
 				B74F704E255ADD9F007DBA35 /* Frameworks */,
 				B74F704F255ADD9F007DBA35 /* Resources */,
@@ -139,6 +165,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A96AADBF0399C29157BB9049 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LXNewHouse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B74F704D255ADD9F007DBA35 /* Sources */ = {
@@ -288,6 +339,7 @@
 		};
 		B74F706B255ADDA3007DBA35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE43E3649100B0362024DCE6 /* Pods-LXNewHouse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +358,7 @@
 		};
 		B74F706C255ADDA3007DBA35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF6BE73B67CB5F92D8BDCC13 /* Pods-LXNewHouse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
